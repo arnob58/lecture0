@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Attribute </title>
+	<style>
+		input[name = 'name']
+		{
+			background-color: green;
+		}
+		input[type = 'number']
+		{
+			background-color: red;
+		}
+		input[value]
+		{
+			color : Black;
+		}
+		button
+		{
+			background-color : #c45d14
+		}
+		button:hover
+		{
+			background-color : #9e4b10 
+		}
+		@media print
+		{
+			.screen-only
+			{
+				display : None; 
+			}
+		}
+		@media (max-width : 300px)
+		{
+			.screen-only
+			{
+				height : 5px;
+				width :  5px;
+				font-size : 3px;  
+			}
+
+		} 
+	</style>
+</head>
+<body>
+	<div class = 'screen-only'>
+		<input type = 'text' name = 'name' placeholder = "Name">
+		<input type = 'number' name = "age" placeholder = "Age">
+		<button> Submit </button>
+	</div>
+	<p> Hello world </p>
+
+</body>
+</html>
